@@ -6,7 +6,7 @@ wn = turtle.Screen()
 wn.bgcolor("white")
 wn.title("Maze Game")
 wn.setup(700,700)
-turtle.register_shape("Thief_left.gif")
+turtle.register_shape("thief_left.gif")
 turtle.register_shape("Thief_right.gif")
 turtle.register_shape("wall.gif")
 turtle.register_shape("treasure.gif")
@@ -46,7 +46,7 @@ class Player(turtle.Turtle):
         move_to_y = self.ycor()
         if (move_to_x, move_to_y) not in walls:
             self.goto(move_to_x, move_to_y)
-            self.shape("Thief_left.gif")
+            self.shape("thief_left.gif")
 
     def go_right(self):
         move_to_x = self.xcor() + 24
